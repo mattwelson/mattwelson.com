@@ -8,22 +8,24 @@ class Navbar extends React.Component {
     isActive: false
   }
 
-  handleMenuOpen = () =>
+  handleMenuToggle = () =>
     this.setState(({ isActive }) => ({ isActive: !isActive }))
+
+  handleMenuClose = () => this.setState(() => ({ isActive: false }))
 
   render() {
     return (
       <nav className="navbar is-light">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item">
+            <Link to="/" className="navbar-item" onClick={this.handleMenuClose}>
               <strong>Matt</strong>&nbsp;<span>Welson</span>
             </Link>
             <div
               className={`navbar-burger ${
                 this.state.isActive ? 'is-active' : ''
               }`}
-              onClick={this.handleMenuOpen}
+              onClick={this.handleMenuToggle}
             >
               <span />
               <span />
@@ -34,10 +36,18 @@ class Navbar extends React.Component {
             className={`navbar-menu ${this.state.isActive ? 'is-active' : ''}`}
           >
             <div className="navbar-start">
-              <Link className="navbar-item" to="/about">
+              <Link
+                className="navbar-item"
+                to="/about"
+                onClick={this.handleMenuClose}
+              >
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link
+                className="navbar-item"
+                to="/products"
+                onClick={this.handleMenuClose}
+              >
                 Products
               </Link>
             </div>
