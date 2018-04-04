@@ -1,6 +1,5 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: about-page
 title: Web Developer
 ---
 
@@ -18,4 +17,4 @@ I specialise in ASP .NET MVC, building web applications for a Dunedin based fina
 
 ### Shout out to my wife
 
-My lovely wife runs her own blog at [Get Out NZ](https://getoutnz.wordpress.com/) featuring walks from across New Zealand, including her talented photography
+My lovely wife runs her own blog at [Get Out NZ](https://getoutnz.wordpress.com/) featuring walks from across New Zealand, including her talented photography.
