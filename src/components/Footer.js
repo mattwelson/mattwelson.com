@@ -9,7 +9,7 @@ const Footer = () => (
           Twitter:{' '}
           <strong>
             <a
-              href="https//twitter.com/mattwelson"
+              href="https://twitter.com/mattwelson"
               target="_blank"
               rel="noopener noreferrer"
             >
