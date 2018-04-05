@@ -7,7 +7,7 @@ title: Web Developer
 
 #### _Hello!_
 
-I'm Matt, a programmer living in Whanganui, New Zealand. I love podcasts, reading booking, playing games and writing code. Even though desk work doesn't always lend itself to it, I enjoy powerlifting.
+I'm Matt, a programmer living in Whanganui, New Zealand. I love podcasts, reading booking, playing [games](/tags/games) and [writing code](/tags/code). Even though desk work doesn't always lend itself to it, I enjoy powerlifting.
 
 Sometimes I tweet. [@MattWelson](https://twitter.com/MattWelson)
 

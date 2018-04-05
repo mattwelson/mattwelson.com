@@ -27,6 +27,7 @@ module.exports = {
         plugins: []
       }
     },
+    'gatsby-plugin-catch-links',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify',
     {

@@ -10,6 +10,7 @@ class TagRoute extends React.Component {
         <Link to={post.node.fields.slug}>
           <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
         </Link>
+        <p>{post.node.frontmatter.description}</p>
       </li>
     ))
     const tag = this.props.pathContext.tag
@@ -63,6 +64,7 @@ export const tagPageQuery = graphql`
           }
           frontmatter {
             title
+            description
           }
         }
       }
