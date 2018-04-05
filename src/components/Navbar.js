@@ -43,13 +43,6 @@ class Navbar extends React.Component {
               >
                 About
               </Link>
-              <Link
-                className="navbar-item"
-                to="/products"
-                onClick={this.handleMenuClose}
-              >
-                Products
-              </Link>
             </div>
             <div className="navbar-end">
               <a

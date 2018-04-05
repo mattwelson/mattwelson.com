@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component {
       <section className="section">
         <div className="container">
           <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+            <h1 className="has-text-weight-bold is-size-2">Latest Posts</h1>
           </div>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
@@ -29,10 +29,13 @@ export default class IndexPage extends React.Component {
                   <small>{post.frontmatter.date}</small>
                 </p>
                 <p>
-                  {post.excerpt}
+                  {post.frontmatter.description}
                   <br />
                   <br />
-                  <Link className="button is-small" to={post.fields.slug}>
+                  <Link
+                    className="button is-small is-outlined is-primary"
+                    to={post.fields.slug}
+                  >
                     Keep Reading →
                   </Link>
                 </p>
@@ -47,9 +50,9 @@ export default class IndexPage extends React.Component {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
+      edges: PropTypes.array
+    })
+  })
 }
 
 export const pageQuery = graphql`
@@ -66,6 +69,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            description
           }
         }
       }
