@@ -13,7 +13,7 @@ Sometimes I tweet. [@MattWelson](https://twitter.com/MattWelson)
 
 ### My day job
 
-I specialise in ASP .NET MVC, building web applications for a Dunedin based finance company, where I've been working since November 2013. I graduated with a BSc in Computer Science and Psychology, and a BA in Philosophy. Over the years I've grown to love all things frontend, particularly JavaScript - though I did go through a "I don't need JavaScript, CSS is life!" phase.
+I specialise in ASP .NET MVC, building web applications for a Dunedin-based finance company, where I've been working since November 2013. I graduated with a BSc in Computer Science and Psychology, and a BA in Philosophy. Over the years I've grown to love all things frontend, particularly JavaScript - though I did go through a "I don't need JavaScript, CSS is life!" phase.
 
 ### Shout out to my wife
 
