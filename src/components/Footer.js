@@ -1,10 +1,28 @@
 import React from 'react'
 
+const quotes = [
+  'Web dev',
+  'Web developer',
+  'Frontend developer',
+  'Coder',
+  'Movie reviewer',
+  'Podcast fan',
+  'Doing my own thing',
+  'I got this',
+  `I'm here to write code`,
+  'Code all day, sleep all night',
+  'Nice reading, reader!',
+  'I build websites!',
+  'I wish I had more interesting random quotes'
+]
+const randomQuote = () => quotes[Math.floor(Math.random() * quotes.length)]
+
 const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="content has-text-centered">
-        <h4>Matt Welson</h4>
+        <h4 className="has-text-light">Matt Welson</h4>
+        <p className="has-text-grey is-italic">{randomQuote()}</p>
         <p>
           Twitter:{' '}
           <strong>
