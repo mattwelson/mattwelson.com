@@ -5,7 +5,7 @@ date: 2018-04-04T02:06:36.645Z
 description: >-
   Dread is a roleplaying game where a Jenga tower stands menacingly between the
   players and the Game Master. To progress in the game they must pull blocks
-  out, but the tower falls the character will meet their end.
+  out, but when the tower falls the character will meet their end.
 tags:
   - RPG
   - Games
