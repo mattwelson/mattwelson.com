@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const BlogCard = ({ post }) => (
-  <div className="card card--blog content">
+  <div className="card card--blog">
     <header className="card-header">
       <Link
         className="has-text-primary card-header-title"
