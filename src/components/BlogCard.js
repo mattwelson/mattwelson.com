@@ -3,28 +3,28 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const BlogCard = ({ post }) => (
-  <div
-    className="content"
-    style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-  >
-    <p>
-      <Link className="has-text-primary" to={post.fields.slug}>
-        {post.frontmatter.title}
-      </Link>
-      <span> &bull; </span>
-      <small>{post.frontmatter.date}</small>
-    </p>
-    <p>
-      {post.frontmatter.description}
-      <br />
-      <br />
+  <div className="card card--blog content">
+    <header className="card-header">
       <Link
-        className="button is-small is-outlined is-primary"
+        className="has-text-primary card-header-title"
         to={post.fields.slug}
       >
+        {post.frontmatter.title}
+      </Link>
+    </header>
+    <div className="card-content">
+      <div className="content">
+        <p>{post.frontmatter.description}</p>
+      </div>
+    </div>
+    <footer className="card-footer">
+      <div className="card-footer-item">
+        <small>{post.frontmatter.date}</small>
+      </div>
+      <Link className="has-text-primary card-footer-item" to={post.fields.slug}>
         Keep Reading →
       </Link>
-    </p>
+    </footer>
   </div>
 )
 

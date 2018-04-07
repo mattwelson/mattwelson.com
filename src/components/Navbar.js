@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import github from '../img/github-icon.svg'
+import githubDark from '../img/github-icon-dark.svg'
 
 class Navbar extends React.Component {
   state = {
@@ -52,7 +53,10 @@ class Navbar extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  <img src={github} alt="Github" />
+                  <img
+                    src={this.state.isActive ? githubDark : github}
+                    alt="Github"
+                  />
                 </span>
               </a>
             </div>
