@@ -54,7 +54,9 @@ const Footer = () => (
         </div>
         <div className="column content has-text-right">
           <h4 className="has-text-light">Matt Welson</h4>
-          <p className="has-text-grey is-italic">{window && randomQuote()}</p>
+          <p className="has-text-grey is-italic">
+            {typeof window !== `undefined` && randomQuote()}
+          </p>
         </div>
       </div>
     </div>
