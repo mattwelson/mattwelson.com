@@ -17,7 +17,7 @@ Since the start of this year I've been hoping to rehab an injured shoulder and g
 
 > A push pull meet consists of bench and deadlift, skipping over the squat.
 
-The day of the meet flew up on me and before I knew it I was making a plan for my attempts, all the lifts went as planned but both 3rd attempts were up 2.5kg from my original plans. Both lifts had an okay first attempt, a really good second attempt and then a challenging PB on the final attempt.
+The day of the meet flew up on me and before I knew it I was making a plan for my attempts, all the lifts went as planned but both 3rd attempts were up 2.5kg from my original plans. Both lifts had an okay first attempt, a fast second attempt and then a challenging PB on the final attempt.
 
 | Attempt      | Weight  |
 | ------------ | ------- |
@@ -31,4 +31,4 @@ The day of the meet flew up on me and before I knew it I was making a plan for m
 
 My shoulder help up without pain on all bench attempts, on the final attempt I could feel the right shoulder start to hunch forward a little in the bottom position.
 
-Because it was a club meet with 8 of us, we were allowed to do fourth attempts that wouldn't count to the competition. I attempted a 190kg deadlift but missed it totally, I don't think the plates left the floor at all!
+Because it was a club meet with 8 of us, we could make fourth attempts that wouldn't count to the competition. I attempted a 190kg deadlift but missed it totally, I don't think the plates left the floor at all!
