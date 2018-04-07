@@ -20,7 +20,7 @@ Since the start of this year I've been hoping to rehab an injured shoulder and g
 The day of the meet flew up on me and before I knew it I was making a plan for my attempts, all the lifts went as planned but both 3rd attempts were up 2.5kg from my original plans. Both lifts had an okay first attempt, a fast second attempt and then a challenging PB on the final attempt.
 
 | Attempt      | Weight  |
-| ------------ | ------- |
+| ------------ | ------- |--
 | Bench 1st    | 87.5kg  |
 | Bench 2nd    | 92.5kg  | Matched previous competition best |
 | Bench 3rd    | 97.5kg  | Matched gym best |
