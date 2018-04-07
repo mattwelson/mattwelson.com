@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
+import TagAndCount from '../components/TagAndCount'
 
 export const BlogPostTemplate = ({
   content,
@@ -11,7 +12,8 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  helmet
+  helmet,
+  tagsWithCount
 }) => {
   const PostContent = contentComponent || Content
 
@@ -29,11 +31,17 @@ export const BlogPostTemplate = ({
             <div style={{ marginTop: `4rem` }}>
               <h4>Tags</h4>
               <ul className="taglist">
-                {tags.map(tag => (
-                  <li key={tag + `tag`}>
-                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                  </li>
-                ))}
+                {tagsWithCount
+                  ? tagsWithCount.map(tag => (
+                      <li key={tag.name + `tag`}>
+                        <TagAndCount name={tag.name} count={tag.count} />
+                      </li>
+                    ))
+                  : tags.map(tag => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
               </ul>
             </div>
           ) : null}
@@ -53,6 +61,9 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const tagsWithCount = data.allMarkdownRemark.group
+    .map(tag => ({ name: tag.fieldValue, count: tag.totalCount }))
+    .filter(tag => post.frontmatter.tags.includes(tag.name))
 
   return (
     <BlogPostTemplate
@@ -61,6 +72,7 @@ const BlogPost = ({ data }) => {
       description={post.frontmatter.description}
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
+      tagsWithCount={tagsWithCount}
       title={post.frontmatter.title}
     />
   )
@@ -76,6 +88,12 @@ export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
+    allMarkdownRemark(limit: 1000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html

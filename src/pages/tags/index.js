@@ -1,10 +1,12 @@
 import React from 'react'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import TagAndCount from '../../components/TagAndCount'
 
 const TagsPage = ({
-  data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } }
+  data: {
+    allMarkdownRemark: { group: tags },
+    site: { siteMetadata: { title } }
+  }
 }) => (
   <section className="section">
     <Helmet title={`Tags | ${title}`} />
@@ -12,11 +14,9 @@ const TagsPage = ({
       <div className="content">
         <h1 className="title is-size-2 is-bold-light">Tags</h1>
         <ul className="taglist">
-          {group.map(tag => (
+          {tags.map(tag => (
             <li key={tag.fieldValue}>
-              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                {tag.fieldValue} ({tag.totalCount})
-              </Link>
+              <TagAndCount name={tag.fieldValue} count={tag.totalCount} />
             </li>
           ))}
         </ul>
