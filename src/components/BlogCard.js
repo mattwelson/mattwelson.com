@@ -22,7 +22,7 @@ const BlogCard = ({ post }) => (
         <small>{post.frontmatter.date}</small>
       </div>
       <Link className="has-text-primary card-footer-item" to={post.fields.slug}>
-        Keep Reading →
+        {post.frontmatter.readMore || 'Keep Reading'} →
       </Link>
     </footer>
   </div>
@@ -36,7 +36,8 @@ BlogCard.propTypes = {
     frontmatter: PropTypes.shape({
       description: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
-      date: PropTypes.string.isRequired
+      date: PropTypes.string.isRequired,
+      readMore: PropTypes.string
     }).isRequired,
     id: PropTypes.string.isRequired
   }).isRequired

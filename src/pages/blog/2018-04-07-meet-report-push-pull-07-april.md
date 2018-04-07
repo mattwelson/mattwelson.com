@@ -5,11 +5,13 @@ date: 2018-04-07T03:37:41.405Z
 description: >-
   Wanganui Barbell's push pull was a really fun meet, where I set some personal
   bests even though my training has been rough these last few months.
+readMore: Hit the bench
 tags:
   - Fun
   - Powerlifting
 ---
-My first powerlifting meet was in October 2016, that was a big year for my lifts and I made huge progress across the board. The next year was a totally different beast with continuous injuries and program hopping to try to work around them. 
+
+My first powerlifting meet was in October 2016, that was a big year for my lifts and I made huge progress across the board. The next year was a totally different beast with continuous injuries and program hopping to try to work around them.
 
 Since the start of this year I've been hoping to rehab an injured shoulder and get back into a competition. The Wanganui Barbell Push Pull meet was the perfect way to get back into competing. Unfortunately for me the two weeks leading into the competition were plagued with terrible sleep.
 
@@ -17,15 +19,15 @@ Since the start of this year I've been hoping to rehab an injured shoulder and g
 
 The day of the meet flew up on me and before I knew it I was making a plan for my attempts, all the lifts went as planned but both 3rd attempts were up 2.5kg from my original plans. Both lifts had an okay first attempt, a really good second attempt and then a challenging PB on the final attempt.
 
-Attempt | Weight | 
----|---|---
-Bench 1st | 87.5kg |
-Bench 2nd | 92.5kg | Matched previous competition best
-Bench 3rd | 97.5kg | Matched gym best
-Deadlift 1st | 170kg | Matched previous competition best
-Deadlift 2nd | 177.5kg |
-Deadlift 3rd | 185kg | 5kg over gym best
-Bodyweight | 79.1kg | Dressed
+| Attempt      | Weight  |
+| ------------ | ------- |
+| Bench 1st    | 87.5kg  |
+| Bench 2nd    | 92.5kg  | Matched previous competition best |
+| Bench 3rd    | 97.5kg  | Matched gym best |
+| Deadlift 1st | 170kg   | Matched previous competition best |
+| Deadlift 2nd | 177.5kg |
+| Deadlift 3rd | 185kg   | 5kg over gym best |
+| Bodyweight   | 79.1kg  | Dressed |
 
 My shoulder help up without pain on all bench attempts, on the final attempt I could feel the right shoulder start to hunch forward a little in the bottom position.
 

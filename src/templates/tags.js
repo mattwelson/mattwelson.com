@@ -61,6 +61,7 @@ export const tagPageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             description
+            readMore
           }
         }
       }
