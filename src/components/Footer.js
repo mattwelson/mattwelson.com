@@ -20,38 +20,42 @@ const randomQuote = () => quotes[Math.floor(Math.random() * quotes.length)]
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <div className="content has-text-centered">
-        <h4 className="has-text-light">Matt Welson</h4>
-        <p className="has-text-grey is-italic">{randomQuote()}</p>
-        <p>
-          Twitter:{' '}
-          <strong>
-            <a
-              href="https://twitter.com/mattwelson"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @MattWelson
-            </a>
-          </strong>
-        </p>
-        <p>
-          Email:{' '}
-          <strong>
-            <a href="mailto:matt@mattwelson.com">matt@mattwelson.com</a>
-          </strong>
-        </p>
-        <p>
-          <strong>
-            <a
-              href="https://github.com/mattwelson/mattwelson.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-          </strong>
-        </p>
+      <div className="columns">
+        <div className="column content">
+          <p>
+            Twitter:{' '}
+            <strong>
+              <a
+                href="https://twitter.com/mattwelson"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @MattWelson
+              </a>
+            </strong>
+          </p>
+          <p>
+            Email:{' '}
+            <strong>
+              <a href="mailto:matt@mattwelson.com">matt@mattwelson.com</a>
+            </strong>
+          </p>
+          <p>
+            <strong>
+              <a
+                href="https://github.com/mattwelson/mattwelson.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </strong>
+          </p>
+        </div>
+        <div className="column content has-text-right">
+          <h4 className="has-text-light">Matt Welson</h4>
+          <p className="has-text-grey is-italic">{randomQuote()}</p>
+        </div>
       </div>
     </div>
   </footer>

@@ -7,10 +7,10 @@ import Footer from '../components/Footer'
 import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="page">
     <Helmet title="Matt Welson" />
     <Navbar />
-    <div>{children()}</div>
+    <div className="page__content">{children()}</div>
     <Footer />
   </div>
 )

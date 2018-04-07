@@ -16,7 +16,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar is-dark">
-        <div className="container is-fluid">
+        <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" onClick={this.handleMenuClose}>
               <strong>Matt</strong>&nbsp;<span>Welson</span>

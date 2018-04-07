@@ -48,3 +48,15 @@ $primary-invert: $kaldi-red-invert
 
   a:hover
     color: lighten($blue, 5%)
+
+// sticky footer
+.page 
+  display: grid
+  min-height: 100vh
+  grid-template-rows: auto 1fr auto
+
+.page__content 
+  margin-bottom: 5rem
+  
+  .content
+    max-width: 900px
