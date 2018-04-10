@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Matt Welson'
+    title: 'Matt Welson',
+    siteUrl: 'https://mattwelson.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -44,6 +45,7 @@ module.exports = {
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false
       }
-    }
+    },
+    'gatsby-plugin-sitemap'
   ]
 }
