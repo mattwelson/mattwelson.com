@@ -14,3 +14,7 @@ _Coming soon_
 // layouts/index.js
 require('prismjs/themes/prism-solarizedlight.css')
 ```
+
+Testing out smartypants
+
+> "Hello!"

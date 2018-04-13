@@ -50,17 +50,20 @@ $primary-invert: $kaldi-red-invert
     color: lighten($blue, 5%)
 
 // sticky footer
-.page 
+.page
   display: grid
   min-height: 100vh
   grid-template-rows: auto 1fr auto
 
-.page__content 
+.page__content
   margin-bottom: 5rem
-  
+
   .content
     max-width: 900px
 
 .card--blog
   margin-bottom: 3rem
   max-width: 900px
+
+.gatsby-highlight
+  max-width: calc(100vw - 3rem)
