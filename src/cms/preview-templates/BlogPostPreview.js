@@ -8,14 +8,15 @@ const BlogPostPreview = ({ entry, widgetFor }) => (
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
     title={entry.getIn(['data', 'title'])}
+    title={entry.getIn(['data', 'date'])}
   />
 )
 
 BlogPostPreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func,
+    getIn: PropTypes.func
   }),
-  widgetFor: PropTypes.func,
+  widgetFor: PropTypes.func
 }
 
 export default BlogPostPreview

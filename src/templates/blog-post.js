@@ -13,7 +13,8 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
-  tagsWithCount
+  tagsWithCount,
+  date
 }) => {
   const PostContent = contentComponent || Content
 
@@ -25,6 +26,9 @@ export const BlogPostTemplate = ({
           <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
             {title}
           </h1>
+          <p>
+            <span className="tag is-light">{date}</span>
+          </p>
           <p>{description}</p>
           <PostContent content={content} />
           {tags && tags.length ? (
@@ -56,7 +60,8 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object
+  helmet: PropTypes.object,
+  date: PropTypes.string
 }
 
 const BlogPost = ({ data }) => {
@@ -74,6 +79,7 @@ const BlogPost = ({ data }) => {
       tags={post.frontmatter.tags}
       tagsWithCount={tagsWithCount}
       title={post.frontmatter.title}
+      date={post.frontmatter.date}
     />
   )
 }
@@ -98,7 +104,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY")
         title
         description
         tags
