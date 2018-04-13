@@ -6,6 +6,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './all.sass'
 
+require('prismjs/themes/prism-tomorrow.css')
+
 const TemplateWrapper = ({ children }) => (
   <div className="page">
     <Helmet title="Matt Welson" />

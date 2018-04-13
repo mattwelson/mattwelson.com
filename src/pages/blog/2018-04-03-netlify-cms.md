@@ -9,3 +9,8 @@ tags:
 ---
 
 _Coming soon_
+
+```javascript
+// layouts/index.js
+require('prismjs/themes/prism-solarizedlight.css')
+```
