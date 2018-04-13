@@ -1,19 +1,19 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 const quotes = [
-  'Web dev',
+  <Link to="/tags/code">Web dev</Link>,
   'Web developer',
   'Frontend developer',
-  'Coder',
+  <Link to="/tags/code">Coder</Link>,
   'Movie reviewer',
   'Podcast fan',
   'Doing my own thing',
   'I got this',
-  `I'm here to write code`,
-  'Code all day, sleep all night',
+  <Link to="/tags/code">I'm here to write code</Link>,
+  <Link to="/tags/code">Code all day, sleep all night</Link>,
   'Nice reading, reader!',
-  'I build websites!',
-  'I wish I had more interesting random quotes'
+  'I build websites!'
 ]
 const randomQuote = () => quotes[Math.floor(Math.random() * quotes.length)]
 
