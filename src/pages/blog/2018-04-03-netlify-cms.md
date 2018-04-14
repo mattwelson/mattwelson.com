@@ -19,6 +19,7 @@ Skeleton!
     1. Add a field (example, read more link)
     1. Remove the product page
     1. Sum the tag counts
+    1. Add drafts!
 5. Customise the Gatsby setup
     1. Add code styles
     1. Other plugins I used I guess!
