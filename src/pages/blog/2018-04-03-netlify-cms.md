@@ -7,14 +7,18 @@ tags:
   - Development
   - Code
 ---
-
 _Coming soon_
 
-```javascript
-// layouts/index.js
-require('prismjs/themes/prism-solarizedlight.css')
-```
-
-Testing out smartypants
-
-> "Hello!"
+Skeleton!
+1. Install Netlify CMS
+2. Review the files and settings
+3. Look at the CMS backend
+4. Customise the Netlify CMS setup
+    1. Edit a page - about page is a good candidate
+    1. Add date to the blog post page
+    1. Add a field (example, read more link)
+    1. Remove the product page
+    1. Sum the tag counts
+5. Customise the Gatsby setup
+    1. Add code styles
+    1. Other plugins I used I guess!
