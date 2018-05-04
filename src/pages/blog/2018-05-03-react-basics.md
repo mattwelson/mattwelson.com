@@ -15,14 +15,19 @@ tags:
 [A great primer](https://medium.freecodecamp.org/a-comprehensive-guide-to-react-js-in-2018-ba8bb6975597)
 ## What **IS** React?
 React is a front end javascript library built and maintained by Facebook. It's open source, with a fairly permissive licence, except you can't sue Facebook if anything goes wrong and you can't patent it - the wording on this caused a whole bunch of confusion in a couple of different waves. 
+
 React is made up of components, what is rendered by a component is determined by its **state** and the **props** being passed to it. A component is a reusable unit of functionality, which may contain any number of child components.
+
 Components can be made with functions, or they can use the es2015 class syntax. If you use a class, it extends React.Component, and must at minimum implement a render function.
 <iframe src="https://codesandbox.io/embed/km7vyq559v" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 ## What isn't React
 React isn't new. It's been around for 5 years.
+
 React isn't MVC. It's only the View layer of an application, but that's not a bad thing! 
+
 React isn't Angular. It doesn't have an in built router or an ajax method or a kitchen sink or anything like that. To acheive that stuff you'll need to go find an external library, there are many of those and lots of them are amazing. Some people think of this as a con to using React and that it adds to the learning curve. It doesn't have 2 way data binding, instead of the UI magically updating the state, you need to do that via events.
+
 React isn't JQuery. Instead of manipulating the DOM, you manipulate the state that is creating the DOM. So if you want to toggle a button to display or hide some text you might take the following steps:
 1. Create a state object with a "displayText: true" property
 2. Change the render function to show or hide the text based on this state
@@ -31,11 +36,13 @@ React isn't JQuery. Instead of manipulating the DOM, you manipulate the state th
 
 ## Let's have a look
 CodeSandbox.io is a great way to see what a React application looks like without all the set up overhead of writing a modern JavaScript app. It's based off the create-react-app starter which is already a great default template that abstracts a huge amount of overhead away from the developer.
+
 Let's go and start a new project! Be sure to use React first. 
 <iframe src="https://codesandbox.io/embed/new" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 ### JSX and es2015 things
 We're going to run through each file but FIRST, let's take a quick peaking at index.js. This might look crazy to you, it's nothing like the JS that we use at work. 
+
 - import and export are key words in es2015. They do exactly what they say, they allow you to import dependencies and export your own. The first two import statements are using dependencies hosted on NPM and specified in the `project.json` file, the next import is one of the files in this project, which is why it starts with `./`. Although import and export are part of the JS spec, they don't do anything without the use of a build tool at the moment. `import React from 'react'` takes the default export from the project - `import { render } from 'react-dom'` only takes the export called render. Normally this could also be accessed with `ReactDom.render`.
 - const is a new keyword, along with let. They both replace var, and just have significantly better scoping, much more consistent with other languages. Styles is just a js object.
 - Weird arrows? This is an arrow function, it's short hand, the empty parenthises are where you might insert parameters, the right hand stuff is what the function returns.
