@@ -29,3 +29,10 @@ Here's a few links you might find helpful if you get started on a similar projec
 - [Styled components](https://www.styled-components.com/)
 
 ## Getting started
+_Coming soon_
+
+## Possible future additions
+Here's a few ideas I might add in the future
+- Store the attribute values in local storage
+- Add the luck, harm and experience tracks to this
+- Add links to the playbook pdf
