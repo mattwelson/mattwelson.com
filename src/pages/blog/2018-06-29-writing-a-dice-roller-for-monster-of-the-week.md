@@ -7,8 +7,8 @@ description: >-
   towards a finished, styled application with tests.
 readMore: Roll Cool!
 tags:
-  - Dev
-  - React
+  - Development
+  - Reactjs
   - TDD
 ---
 ## What we're making
