@@ -44,6 +44,14 @@ class Navbar extends React.Component {
               >
                 About
               </Link>
+              <a
+                className="navbar-item"
+                href="https://trips.mattwelson.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Trips
+              </a>
             </div>
             <div className="navbar-end">
               <a
