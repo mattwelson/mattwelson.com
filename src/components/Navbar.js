@@ -50,7 +50,7 @@ class Navbar extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Trips
+                Trips ✈️
               </a>
             </div>
             <div className="navbar-end">
