@@ -4,10 +4,10 @@ import React from "react"
 import styled from "styled-components"
 
 const Cover = styled.div`
-background: ${({ theme }) => theme.colors.brand}
-min-height: 12rem;
-grid-row: 1;
-grid-column: 1;
+  background: ${({ theme }) => theme.colors.brand};
+  min-height: 12rem;
+  grid-row: 1;
+  grid-column: 1;
 `
 
 const HeaderStyles = styled.header`

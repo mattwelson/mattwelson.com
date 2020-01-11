@@ -1,29 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import Card from "../components/posts/card"
+
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query queryAllPosts {
+      allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+        nodes {
+          ...BlogCard
+        }
+      }
+    }
+  `)
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+
+      <div className="profile">
+        <h2>Web Developer</h2>
+        <p>
+          Hi, I'm Matt. I build front end websites that are fast, dynamic and
+          easy to work with. I also love walking, running, taking photographs,
+          Rocket League, and almost any useless skill I can learn.
+        </p>
+      </div>
+      <div>
+        {data.allMdx.nodes.map(node => (
+          <Card key={node.id} post={node} />
+        ))}
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage

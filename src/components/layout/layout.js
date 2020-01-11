@@ -14,6 +14,10 @@ import theme from "../../utils/theme"
 import Header from "./header"
 import Footer from "./footer"
 
+import "./layout.css"
+import "typeface-open-sans"
+import "../../utils/language-tabs.css"
+
 const PageBackground = styled.div`
   position: relative;
   z-index: 10;
@@ -29,7 +33,7 @@ const PageContainer = styled.div`
   overflow: hidden;
   position: relative;
   top: -6rem;
-  padding: 2rem;
+  padding: 2rem 5rem 5rem;
   box-shadow: 0 30px 50px 0 rgba(1, 1, 1, 0.15);
 `
 

@@ -30,7 +30,7 @@ const FooterStyles = styled.footer`
 `
 
 const Link = ({ link }) => (
-  <a href={link.url} key={link.url} target="_blank" rel="noopener noreferrer">
+  <a href={link.url} target="_blank" rel="noopener noreferrer">
     {link.title}
   </a>
 )
@@ -60,7 +60,7 @@ const Footer = () => {
       <p>See what I'm doing, or get in touch:</p>
       <FooterLinks>
         {data.site.siteMetadata.links.map(link => (
-          <Link link={link} />
+          <Link link={link} key={link.url} />
         ))}
       </FooterLinks>
 
