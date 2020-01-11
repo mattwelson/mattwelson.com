@@ -87,7 +87,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: `tags/${fieldValue}`.toLowerCase(),
       component: path.resolve("./src/components/posts/tag-layout.js"),
       context: {
-        category: fieldValue,
+        tag: fieldValue,
       },
     })
   )

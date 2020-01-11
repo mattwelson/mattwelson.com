@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 import components from "../../utils/components"
@@ -17,9 +17,10 @@ export default function PageTemplate({
         <h2>{node.frontmatter.title}</h2>
         <MDXRenderer>{node.body}</MDXRenderer>
 
-        <h3>Tags</h3>
-        {node.frontmatter.tags.map(tag => (
-          <p key={tag}>{tag}</p>
+        {node.frontmatter.tags.map((tag, i) => (
+          <Link to={`/tags/${tag.toLowerCase()}`} key={tag}>
+            {i === 0 ? "" : " | "} #{tag}
+          </Link>
         ))}
 
         <h2>Read more:</h2>

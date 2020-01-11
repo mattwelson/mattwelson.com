@@ -6,7 +6,7 @@ import Card from "./card"
 
 const TagPage = ({ data, pageContext }) => (
   <Layout>
-    <h2>{pageContext.tag}</h2>
+    <h2>#{pageContext.tag}</h2>
     <p>
       There are <b>{data.allMdx.totalCount}</b> posts tagged with{" "}
       <b>{pageContext.tag}</b>.

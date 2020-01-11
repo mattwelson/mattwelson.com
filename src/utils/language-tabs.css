@@ -36,6 +36,12 @@
   color: black;
 }
 
+.gatsby-highlight pre[class~="language-mdx"]::before {
+  content: "mdx";
+  background: #005a9c;
+  color: white;
+}
+
 .gatsby-highlight pre[class~="language-html"]::before {
   content: "html";
   background: #005a9c;
