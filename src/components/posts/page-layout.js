@@ -15,14 +15,16 @@ export default function PageTemplate({
     <MDXProvider components={components}>
       <Layout>
         <h2>{node.frontmatter.title}</h2>
+        {node.frontmatter.date} - {node.timeToRead} min read -{" "}
+        <Link to={`/category/${node.frontmatter.category.toLowerCase()}`}>
+          {node.frontmatter.category}
+        </Link>
         <MDXRenderer>{node.body}</MDXRenderer>
-
         {node.frontmatter.tags.map((tag, i) => (
           <Link to={`/tags/${tag.toLowerCase()}`} key={tag}>
             {i === 0 ? "" : " | "} #{tag}
           </Link>
         ))}
-
         <h2>Read more:</h2>
         {previous && (
           <>

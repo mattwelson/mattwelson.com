@@ -3,7 +3,7 @@ title: Adding tags and category pages to your Gatsby site
 date: 2020-01-11
 description: >-
   Add dynamic pages for tags or categories on your GatsbyJs blog
-readMore: CreatePage
+readMore: Learn more
 tags:
   - gatsbyjs
   - development
@@ -137,3 +137,33 @@ export const pageQuery = graphql`
 
 The above is the category page - the tag page version will
 just need a few tweaks to make it work there too.
+
+## Another way
+
+What if you want a count of each tag to appear on the posts?
+I had this on my old blog, but it was implemented fairly shoddily.
+I wouldn't recommend following this advice but I'm not sure how
+you'd do it through graphql alone.
+
+![Counts on my old blog](./images/tag-count.png)
+
+```jsx
+// Removing tags that aren't on the post
+const tagsWithCount = data.allMdx.group
+  .filter(tag => post.frontmatter.tags.includes(tag.name))
+
+export const pageQuery`
+  allMdx {
+    group(field: frontmatter___tags) {
+      name: fieldValue
+      count: totalCount
+    }
+  }
+`
+```
+
+One of the main cons about this is the graphql data gets sent
+to the client on hydration, which means that if it includes every single
+tag, even ones that aren't needed, then the file will be much bigger than
+needed. You can help this by creating a regex and using a filter on the allMdx above,
+but it doesn't seem like the nicest approach to me.
