@@ -33,8 +33,16 @@ const PageContainer = styled.div`
   overflow: hidden;
   position: relative;
   top: -6rem;
-  padding: 2rem 5rem 5rem;
+  padding: 2rem 2rem 5rem;
   box-shadow: 0 30px 50px 0 rgba(1, 1, 1, 0.15);
+  
+  @media (min-width: 500px) {
+    padding: 2rem 3rem 5rem;
+  }
+
+  @media (min-width: 800px) {
+    padding: 2rem 5rem 5rem;
+  }
 `
 
 const Layout = ({ children }) => {
