@@ -2,6 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
+import Helmet from "react-helmet"
+
 import components from "../../utils/components"
 import Card from "./card"
 
@@ -14,6 +16,7 @@ export default function PageTemplate({
   return (
     <MDXProvider components={components}>
       <Layout>
+        <Helmet title={node.frontmatter.title} />
         <h2>{node.frontmatter.title}</h2>
         {node.frontmatter.date} - {node.timeToRead} min read -{" "}
         <Link to={`/category/${node.frontmatter.category.toLowerCase()}`}>
